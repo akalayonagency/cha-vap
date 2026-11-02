@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cha'Vap · Boutique de cigarettes électroniques</title>
+  <meta name="description" content="Cha'Vap, votre boutique spécialisée en cigarette électronique : plus de 300 saveurs d'e-liquides, résistances, pods et accessoires. Conseils personnalisés et ambiance conviviale.">
+  <meta name="theme-color" content="#030608">
+  <meta property="og:title" content="Cha'Vap · Plus qu'une vape, un style !">
+  <meta property="og:description" content="Boutique spécialisée en cigarette électronique : e-liquides, résistances, pods, accessoires et conseils personnalisés.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/logo-chavap-source.jpg?v=2">
+  <link rel="icon" href="assets/img/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icone-180.png?v=2">
+  <link rel="preload" href="assets/fonts/kaushan-script.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/chat/chat-nuage.webp?v=3" as="image">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Cha'Vap",
+    "description": "Boutique spécialisée en cigarette électronique, e-liquides, résistances, pods et accessoires.",
+    "telephone": "+33612345678",
+    "email": "contact@chavap.fr",
+    "address": { "@type": "PostalAddress", "streetAddress": "12 Rue de la Vape", "postalCode": "75000", "addressLocality": "Paris", "addressCountry": "FR" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "13:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "14:00", "closes": "19:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Pictogrammes -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-paw" viewBox="0 0 32 32"><ellipse cx="16" cy="21.5" rx="7.2" ry="6.2"/><ellipse cx="7.2" cy="13.4" rx="2.9" ry="3.6" transform="rotate(-18 7.2 13.4)"/><ellipse cx="12.6" cy="7.9" rx="2.9" ry="3.8" transform="rotate(-6 12.6 7.9)"/><ellipse cx="19.4" cy="7.9" rx="2.9" ry="3.8" transform="rotate(6 19.4 7.9)"/><ellipse cx="24.8" cy="13.4" rx="2.9" ry="3.6" transform="rotate(18 24.8 13.4)"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5 5 4h14l1.5 5.5"/><path d="M3.5 9.5a2.8 2.8 0 0 0 5.6 0 2.8 2.8 0 0 0 5.8 0 2.8 2.8 0 0 0 5.6 0"/><path d="M5 12v8h14v-8M10 20v-5h4v5"/></g></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15Z"/><path d="M5 19 13 11"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7.2 3.5h-2A1.7 1.7 0 0 0 3.5 5.3C3.9 13.4 10.6 20.1 18.7 20.5a1.7 1.7 0 0 0 1.8-1.7v-2a1.2 1.2 0 0 0-.9-1.1l-3.3-.9a1.2 1.2 0 0 0-1.2.4l-1.2 1.4a12.3 12.3 0 0 1-5.6-5.6l1.4-1.2a1.2 1.2 0 0 0 .4-1.2l-.9-3.3a1.2 1.2 0 0 0-1.1-.9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></g></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-7-7 18-2.5-8.5Z"/></g></symbol>
+    <symbol id="i-bottle" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M13 3h6v5h-6z"/><path d="M12.5 8h7v3l3 3.5V27a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2V14.5l3-3.5Z"/><path d="M9.5 17h13v7h-13"/></g></symbol>
+    <symbol id="i-coil" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="9" y="4" width="14" height="24" rx="3"/><path d="M9 10h14M9 22h14"/><path d="M12.5 13.5c2.3 1.4 4.7 1.4 7 0M12.5 16c2.3 1.4 4.7 1.4 7 0M12.5 18.5c2.3 1.4 4.7 1.4 7 0"/></g></symbol>
+    <symbol id="i-pod" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M11 9.5c0-3 2.2-6 5-6s5 3 5 6V27a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2Z"/><path d="M11 13h10"/><circle cx="16" cy="21" r="1.4" fill="currentColor" stroke="none"/></g></symbol>
+    <symbol id="i-acc" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="11" height="17" rx="2"/><path d="M7.5 10V7h4v3M7 17h5"/><path d="M19 6v6M24 6v6M17.5 12h8v3a4 4 0 0 1-8 0Z"/><path d="M21.5 19v3.5a3.5 3.5 0 0 0 3.5 3.5H28"/></g></symbol>
+    <symbol id="i-diamond" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6.5 4h11L21 9l-9 11L3 9Z"/><path d="M3 9h18M9.5 4 8 9l4 11 4-11-1.5-5"/></g></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19c.6-3.2 2.7-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9.5" r="2.5"/><path d="M15.8 14.3c2.5-.2 4.3 1.3 4.8 4.2"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 30c-3-2.5-5-6-5-10a12 12 0 0 1 24 0c0 4-2 7.5-5 10v4H17Z"/><path d="M18.5 39h11M20.5 43.5h7M24 34v-8M20.5 22.5 24 26l3.5-3.5"/><path d="M24 2.5v3.5M7 9.5l2.5 2.5M41 9.5 38.5 12M3 21h3.5M45 21h-3.5"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 5.5h16v10H9l-4.5 4v-4H4Z"/><path d="M8 9.5h8M8 12.5h5" stroke-linecap="round"/></g></symbol>
+    <symbol id="i-cog" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7"/></g></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></g></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></g></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5h1.6V4.4A21 21 0 0 0 14.4 4c-2.4 0-3.9 1.4-3.9 4v2.5H8v3h2.5V21Z" fill="currentColor"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- Accueil : contrôle de l'âge, révélé dans la fumée -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title" aria-describedby="gate-desc">
+  <canvas class="gate__smoke" data-smoke="gate" aria-hidden="true"></canvas>
+  <span class="gate__cat" aria-hidden="true"><img src="assets/img/chat/chat-coucou.webp?v=3" width="320" height="717" alt=""></span>
+  <div class="gate__box">
+    <img class="gate__logo" src="assets/img/logo-chavap.webp?v=2" width="903" height="903" alt="Cha'Vap, cigarettes électroniques">
+    <h2 class="gate__title" id="gate-title">Avez-vous 18&nbsp;ans ou plus&nbsp;?</h2>
+    <p class="gate__desc" id="gate-desc">Ce site présente des produits du vapotage, dont la vente est interdite aux mineurs.</p>
+    <div class="gate__actions">
+      <button class="btn btn--primary" type="button" data-gate="yes">Oui, entrer <svg class="ico"><use href="#i-arrow"/></svg></button>
+      <button class="btn btn--outline" type="button" data-gate="no">Non</button>
+    </div>
+    <p class="gate__no" hidden>Désolé, ce site est réservé aux personnes majeures. À bientôt chez Cha'Vap&nbsp;!</p>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="brand" href="#accueil" aria-label="Cha'Vap, retour à l'accueil">
+      <span class="logo logo--nav"><span class="logo__cha">Cha'</span><span class="logo__vap">Vap</span></span>
+      <span class="brand__sub">Cigarettes électroniques</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#accueil" aria-current="true">Accueil</a></li>
+        <li><a href="#boutique">La boutique</a></li>
+        <li><a href="#univers">Univers</a></li>
+        <li><a href="#conseils">Conseils</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#infos">Infos pratiques</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--outline btn--sm header__cta" href="#contact"><svg class="ico"><use href="#i-mail"/></svg>Contact</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu mobile">
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#boutique">La boutique</a></li>
+      <li><a href="#univers">Univers</a></li>
+      <li><a href="#conseils">Conseils</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#infos">Infos pratiques</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn--primary" href="#contact"><svg class="ico"><use href="#i-mail"/></svg>Nous contacter</a>
+  <span class="menu__cat" aria-hidden="true"><img src="assets/img/chat/chat-coucou.webp?v=3" width="320" height="717" alt=""></span>
+</div>
+
+<main id="contenu">
+
+  <!-- HERO -->
+  <section class="hero" id="accueil" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="assets/img/visuels/boutique-bar.webp?v=3" width="1200" height="944" alt="" fetchpriority="high">
+    </div>
+    <canvas class="hero__smoke" data-smoke="hero" aria-hidden="true"></canvas>
+
+    <div class="hero__inner">
+      <div class="hero__cat" data-parallax="0.6">
+        <div class="hero__halo" aria-hidden="true"></div>
+        <button class="cat-btn" type="button" id="heroCat" aria-label="Faire souffler un nuage à Cha'Vap et lire son conseil">
+          <img class="cat-img" src="assets/img/chat/chat-nuage.webp?v=3" width="1600" height="1350" alt="Cha'Vap, le chat de la boutique, fait un clin d'œil en vapotant">
+        </button>
+        <div class="bubble" id="heroBubble" role="status" aria-live="polite"></div>
+        <p class="hero__hint" aria-hidden="true"><svg class="ico"><use href="#i-paw"/></svg> Cliquez sur le chat</p>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">
+          <span class="logo logo--hero"><span class="logo__cha">Cha'</span><span class="logo__vap">Vap</span></span>
+          <span class="kicker kicker--hero">Cigarettes électroniques</span>
+        </h1>
+        <svg class="hero__paw" aria-hidden="true"><use href="#i-paw"/></svg>
+        <p class="hero__tagline">Plus qu'une vape, un <em>style</em>&nbsp;!</p>
+        <p class="hero__lead">Votre boutique spécialisée en cigarette électronique, e-liquides, résistances, pods et accessoires.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#boutique"><svg class="ico"><use href="#i-store"/></svg>Découvrir la boutique<svg class="ico ico--end"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--outline" href="#univers"><svg class="ico"><use href="#i-leaf"/></svg>Explorer l'univers<svg class="ico ico--end"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="rayons" aria-label="Nos rayons">
+      <li><a href="#univers" data-product="eliquides"><svg class="rayons__ico"><use href="#i-bottle"/></svg><span><strong>E-liquides</strong><small>+ de 300 saveurs</small></span></a></li>
+      <li><a href="#univers" data-product="resistances"><svg class="rayons__ico"><use href="#i-coil"/></svg><span><strong>Résistances</strong><small>Compatibles &amp; fiables</small></span></a></li>
+      <li><a href="#univers" data-product="pods"><svg class="rayons__ico"><use href="#i-pod"/></svg><span><strong>Pods</strong><small>Simplicité &amp; performance</small></span></a></li>
+      <li><a href="#univers" data-product="accessoires"><svg class="rayons__ico"><use href="#i-acc"/></svg><span><strong>Accessoires</strong><small>Tout pour votre vape</small></span></a></li>
+    </ul>
+  </section>
+
+  <!-- TROIS PORTES -->
+  <section class="doors" aria-label="Découvrir Cha'Vap">
+    <div class="container doors__grid">
+      <a class="door glass" href="#boutique" data-reveal>
+        <div class="door__text">
+          <h2 class="door__title">La boutique</h2>
+          <p>Un espace dédié à la vape, au conseil et à la découverte.</p>
+          <span class="round-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+        <div class="door__media"><img src="assets/img/visuels/boutique-comptoir.webp?v=3" width="472" height="460" alt="" loading="lazy"></div>
+      </a>
+      <a class="door glass" href="#univers" data-reveal>
+        <div class="door__text">
+          <h2 class="door__title">Univers <span class="accent">produits</span></h2>
+          <p>E-liquides, résistances, pods, accessoires… Explorez nos gammes.</p>
+          <span class="round-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+        <div class="door__media"><img src="assets/img/visuels/eliquides.webp?v=3" width="392" height="340" alt="" loading="lazy"></div>
+      </a>
+      <a class="door glass" href="#conseils" data-reveal>
+        <div class="door__text">
+          <h2 class="door__title">Conseils <span class="accent">&amp; expertise</span></h2>
+          <p>Un accompagnement personnalisé pour une vape qui vous ressemble.</p>
+          <span class="round-arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+        <div class="door__media door__media--cat"><img src="assets/img/chat/chat-conseil.webp?v=3" width="580" height="660" alt="" loading="lazy"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- LA BOUTIQUE -->
+  <section class="section boutique" id="boutique" aria-labelledby="boutique-title">
+    <div class="container boutique__grid">
+      <div class="boutique__text">
+        <h2 class="title" id="boutique-title" data-reveal>La <span class="accent">boutique</span></h2>
+        <p class="lead" data-reveal>Une boutique dédiée à la vape, où conseil, qualité et convivialité se rencontrent.</p>
+        <p data-reveal>Chez Cha'Vap, on prend le temps. Installez-vous au comptoir, découvrez les saveurs, prenez le matériel en main et posez toutes vos questions&nbsp;: que vous fassiez vos premiers pas dans la vape ou que vous soyez un vapoteur confirmé, on vous accompagne avec le sourire.</p>
+        <ul class="values" data-reveal-group>
+          <li class="value"><svg class="ico"><use href="#i-diamond"/></svg><strong>Qualité</strong><span>Des produits sélectionnés et un matériel fiable.</span></li>
+          <li class="value"><svg class="ico"><use href="#i-users"/></svg><strong>Conseil personnalisé</strong><span>Une équipe passionnée, à l'écoute de vos besoins.</span></li>
+          <li class="value"><svg class="ico"><use href="#i-star"/></svg><strong>Large sélection</strong><span>Plus de 300 saveurs et du matériel pour tous les styles.</span></li>
+          <li class="value"><svg class="ico"><use href="#i-heart"/></svg><strong>Ambiance conviviale</strong><span>Un lieu chaleureux où l'on aime revenir.</span></li>
+        </ul>
+        <a class="btn btn--primary" href="#infos" data-reveal><svg class="ico"><use href="#i-pin"/></svg>Venir nous voir<svg class="ico ico--end"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="boutique__media" data-reveal>
+        <figure class="frame frame--main" data-parallax="0.25">
+          <img src="assets/img/visuels/boutique-bar.webp?v=3" width="1200" height="944" alt="Le comptoir de la boutique Cha'Vap, éclairé par un anneau lumineux et le néon Cha'Vap" loading="lazy">
+        </figure>
+        <figure class="frame frame--small" data-parallax="-0.2">
+          <img src="assets/img/visuels/boutique-carte.webp?v=3" width="520" height="428" alt="Les étagères d'e-liquides rétroéclairées et le coin salon" loading="lazy">
+        </figure>
+        <div class="stamp" data-parallax="0.45">
+          <img src="assets/img/visuels/patte-neon.webp?v=3" width="312" height="312" alt="" loading="lazy">
+          <p><strong>+ de 300</strong> saveurs à découvrir</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIVERS PRODUITS -->
+  <section class="section univers" id="univers" aria-labelledby="univers-title">
+    <div class="container">
+      <header class="section__head">
+        <h2 class="title" id="univers-title" data-reveal>Univers <span class="accent">produits</span></h2>
+        <p data-reveal>Un large univers pour tous les vapoteurs, débutants comme confirmés.</p>
+      </header>
+
+      <div class="products" data-reveal-group>
+        <article class="product glass" id="p-eliquides">
+          <div class="product__media"><img src="assets/img/visuels/eliquides.webp?v=3" width="392" height="340" alt="Flacons d'e-liquides colorés" loading="lazy"></div>
+          <div class="product__body">
+            <svg class="product__ico"><use href="#i-bottle"/></svg>
+            <h3>E-liquides</h3>
+            <p class="product__tag">+ de 300 saveurs</p>
+            <p>Fruités, gourmands, frais ou classiques&nbsp;: des saveurs pour tous les styles, en plusieurs taux de nicotine et formats.</p>
+            <ul class="chips"><li>Fruités</li><li>Gourmands</li><li>Frais</li><li>Classiques</li><li>Sels de nicotine</li></ul>
+          </div>
+        </article>
+        <article class="product glass" id="p-resistances">
+          <div class="product__media"><img src="assets/img/visuels/galerie-atomiseur.webp?v=3" width="444" height="256" alt="Clearomiseur et sa résistance dans un nuage de vapeur" loading="lazy"></div>
+          <div class="product__body">
+            <svg class="product__ico"><use href="#i-coil"/></svg>
+            <h3>Résistances</h3>
+            <p class="product__tag">Compatibles &amp; fiables</p>
+            <p>Performantes et durables, pour la plupart des clearomiseurs et des pods du marché. On vous aide à trouver la bonne valeur.</p>
+            <ul class="chips"><li>Tirage serré</li><li>Tirage aérien</li><li>Mesh</li><li>Pods</li></ul>
+          </div>
+        </article>
+        <article class="product glass" id="p-pods">
+          <div class="product__media"><img src="assets/img/visuels/produit-pods.webp?v=3" width="488" height="296" alt="Cigarettes électroniques de type pod" loading="lazy"></div>
+          <div class="product__body">
+            <svg class="product__ico"><use href="#i-pod"/></svg>
+            <h3>Pods</h3>
+            <p class="product__tag">Simplicité &amp; performance</p>
+            <p>Compacts, pratiques et efficaces&nbsp;: rechargés en un instant, ils sont parfaits pour débuter ou vapoter en toute discrétion.</p>
+            <ul class="chips"><li>Débutants</li><li>Compacts</li><li>Rechargeables</li></ul>
+          </div>
+        </article>
+        <article class="product glass" id="p-accessoires">
+          <div class="product__media"><img src="assets/img/visuels/atomiseur.webp?v=3" width="320" height="536" alt="Clearomiseur et accessoires de vape" loading="lazy"></div>
+          <div class="product__body">
+            <svg class="product__ico"><use href="#i-acc"/></svg>
+            <h3>Accessoires</h3>
+            <p class="product__tag">Tout pour votre vape</p>
+            <p>Accus, chargeurs, cotons, drip tips, réservoirs de rechange, étuis&nbsp;: tout ce qu'il faut pour une vape au top, au quotidien.</p>
+            <ul class="chips"><li>Accus</li><li>Chargeurs</li><li>Drip tips</li><li>Étuis</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSEILS -->
+  <section class="section conseils" id="conseils" aria-labelledby="conseils-title">
+    <div class="container conseils__grid">
+      <div class="conseils__stage" data-reveal>
+        <svg class="bulb" aria-hidden="true"><use href="#i-bulb"/></svg>
+        <button class="cat-btn cat-btn--tip" type="button" id="tipCat" aria-label="Demander un conseil à Cha'Vap">
+          <img class="cat-img" src="assets/img/chat/chat-conseil.webp?v=3" width="580" height="660" alt="Cha'Vap lève le pouce" loading="lazy">
+        </button>
+        <div class="tipcard glass">
+          <p class="tipcard__label"><svg class="ico"><use href="#i-paw"/></svg>Le conseil du chat</p>
+          <p class="tipcard__text" id="tipText" aria-live="polite">Résistance neuve&nbsp;? Imbibez bien le coton d'e-liquide et patientez quelques minutes avant la première bouffée.</p>
+          <button class="btn btn--outline btn--sm" type="button" id="tipNext">Un autre conseil<svg class="ico ico--end"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+
+      <div class="conseils__text">
+        <h2 class="title" id="conseils-title" data-reveal>Conseils <span class="accent">&amp; expertise</span></h2>
+        <p class="lead" data-reveal>Un accompagnement personnalisé pour une vape qui vous ressemble.</p>
+        <ul class="services" data-reveal-group>
+          <li class="service glass">
+            <svg class="service__ico"><use href="#i-chat"/></svg>
+            <div><h3>Conseils personnalisés</h3><p>On part de vos habitudes, de vos goûts et de vos envies pour vous orienter, simplement et sans jargon.</p></div>
+          </li>
+          <li class="service glass">
+            <svg class="service__ico"><use href="#i-cog"/></svg>
+            <div><h3>Aide au choix de votre matériel</h3><p>Pod, kit, box ou clearomiseur&nbsp;: on compare ensemble, matériel en main, avant que vous ne choisissiez.</p></div>
+          </li>
+          <li class="service glass">
+            <svg class="service__ico"><use href="#i-sliders"/></svg>
+            <div><h3>Optimisation de votre expérience</h3><p>Réglages, résistances, entretien, taux de nicotine&nbsp;: on vous aide à tirer le meilleur de votre vape.</p></div>
+          </li>
+        </ul>
+        <div class="visit" data-reveal>
+          <h3 class="visit__title">Votre première visite</h3>
+          <ol class="visit__steps">
+            <li><strong>On fait connaissance</strong>Vos habitudes, vos envies, vos saveurs préférées.</li>
+            <li><strong>On essaie</strong>Le matériel en main et les saveurs à découvrir.</li>
+            <li><strong>On vous équipe</strong>Avec toutes les explications pour l'entretien.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="section galerie" id="galerie" aria-labelledby="galerie-title">
+    <div class="container">
+      <header class="section__head">
+        <h2 class="title" id="galerie-title" data-reveal>Galerie <span class="accent accent--script">Ambiance &amp; boutique</span></h2>
+        <p data-reveal>Plongez dans l'univers Cha'Vap et découvrez l'ambiance de la boutique.</p>
+      </header>
+      <div class="gallery" data-reveal-group>
+        <button class="shot shot--a" type="button" data-full="assets/img/visuels/boutique-bar.webp?v=3"><img src="assets/img/visuels/boutique-bar.webp?v=3" width="1200" height="944" alt="Le comptoir et son néon patte de chat" loading="lazy"><span class="shot__cap">Le comptoir</span></button>
+        <button class="shot shot--b" type="button" data-full="assets/img/visuels/galerie-coeur.webp?v=3"><img src="assets/img/visuels/galerie-coeur.webp?v=3" width="560" height="256" alt="Un nuage de vapeur en forme de cœur" loading="lazy"><span class="shot__cap">Nuage d'amour</span></button>
+        <button class="shot shot--c" type="button" data-full="assets/img/visuels/galerie-flacons.webp?v=3"><img src="assets/img/visuels/galerie-flacons.webp?v=3" width="452" height="256" alt="Flacons d'e-liquides rétroéclairés" loading="lazy"><span class="shot__cap">Le mur des saveurs</span></button>
+        <button class="shot shot--d" type="button" data-full="assets/img/visuels/galerie-patte.webp?v=3"><img src="assets/img/visuels/galerie-patte.webp?v=3" width="444" height="256" alt="Néon en forme de patte de chat entouré de plantes" loading="lazy"><span class="shot__cap">La patte Cha'Vap</span></button>
+        <button class="shot shot--e" type="button" data-full="assets/img/visuels/galerie-anneau.webp?v=3"><img src="assets/img/visuels/galerie-anneau.webp?v=3" width="488" height="256" alt="Anneaux lumineux suspendus" loading="lazy"><span class="shot__cap">Lumières</span></button>
+        <button class="shot shot--f" type="button" data-full="assets/img/visuels/galerie-salon.webp?v=3"><img src="assets/img/visuels/galerie-salon.webp?v=3" width="508" height="256" alt="Fauteuil en cuir et plante dans le coin salon" loading="lazy"><span class="shot__cap">Le coin salon</span></button>
+        <button class="shot shot--g" type="button" data-full="assets/img/visuels/galerie-atomiseur.webp?v=3"><img src="assets/img/visuels/galerie-atomiseur.webp?v=3" width="444" height="256" alt="Clearomiseur dans un nuage de vapeur" loading="lazy"><span class="shot__cap">Le matériel</span></button>
+        <button class="shot shot--h" type="button" data-full="assets/img/visuels/facade-nuit.webp?v=3"><img src="assets/img/visuels/facade-nuit.webp?v=3" width="556" height="312" alt="La devanture Cha'Vap de nuit" loading="lazy"><span class="shot__cap">La devanture</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFOS PRATIQUES & NOUS TROUVER -->
+  <section class="section infos" id="infos" aria-labelledby="infos-title">
+    <span class="infos__peek" aria-hidden="true" data-parallax="0.3"><img src="assets/img/chat/chat-coucou.webp?v=3" width="320" height="717" alt="" loading="lazy"></span>
+    <div class="container infos__grid">
+      <div class="infos__text">
+        <h2 class="title" id="infos-title" data-reveal>Infos <span class="accent">pratiques</span></h2>
+        <p data-reveal>Horaires, contact, accès&nbsp;: toutes les informations utiles.</p>
+        <p class="status" id="openStatus" data-reveal><span class="status__dot" aria-hidden="true"></span><span class="status__text">Horaires de la boutique</span></p>
+        <ul class="infolist" data-reveal-group>
+          <li class="info glass">
+            <svg class="info__ico"><use href="#i-clock"/></svg>
+            <div>
+              <h3>Horaires</h3>
+              <table class="hours">
+                <caption class="sr-only">Horaires d'ouverture</caption>
+                <tbody>
+                  <tr data-days="2,3,4,5,6"><th scope="row">Du mardi au samedi</th><td>10h00 – 13h00 · 14h00 – 19h00</td></tr>
+                  <tr data-days="0,1"><th scope="row">Dimanche et lundi</th><td>Fermé</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="info glass" id="contact">
+            <svg class="info__ico"><use href="#i-phone"/></svg>
+            <div><h3>Contact</h3><a class="info__link" href="tel:+33612345678">06 12 34 56 78</a></div>
+          </li>
+          <li class="info glass">
+            <svg class="info__ico"><use href="#i-mail"/></svg>
+            <div><h3>E-mail</h3><a class="info__link" href="mailto:contact@chavap.fr?subject=Question%20pour%20Cha'Vap">contact@chavap.fr</a></div>
+          </li>
+          <li class="info glass">
+            <svg class="info__ico"><use href="#i-pin"/></svg>
+            <div><h3>Adresse</h3><address>12 Rue de la Vape<br>75000 Paris</address></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="infos__find">
+        <h2 class="title title--md" data-reveal>Nous <span class="accent">trouver</span></h2>
+        <p data-reveal>Une boutique facile d'accès, au cœur de la ville.</p>
+        <div class="find glass" data-reveal>
+          <div class="map" id="map">
+            <img class="map__poster" src="assets/img/visuels/facade-nuit.webp?v=3" width="556" height="312" alt="La devanture de la boutique Cha'Vap, de nuit" loading="lazy">
+            <button class="btn btn--outline btn--sm map__load" type="button" id="mapLoad"><svg class="ico"><use href="#i-pin"/></svg>Afficher le plan</button>
+            <span class="map__pin" aria-hidden="true"><svg><use href="#i-paw"/></svg></span>
+          </div>
+          <div class="find__bar">
+            <p><strong>Cha'Vap</strong> · 12 Rue de la Vape, 75000 Paris</p>
+            <a class="btn btn--primary btn--sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=12%20Rue%20de%20la%20Vape%2075000%20Paris" target="_blank" rel="noopener"><svg class="ico"><use href="#i-route"/></svg>Itinéraire</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <canvas class="footer__smoke" data-smoke="footer" aria-hidden="true"></canvas>
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img class="footer__logo" src="assets/img/logo-chavap.webp?v=2" width="903" height="903" alt="Cha'Vap, cigarettes électroniques : plus qu'une vape, un style !" loading="lazy">
+    </div>
+    <nav class="footer__nav" aria-label="Plan du site">
+      <a href="#boutique">La boutique</a>
+      <a href="#univers">Univers</a>
+      <a href="#conseils">Conseils</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#infos">Infos pratiques</a>
+    </nav>
+    <div class="footer__social">
+      <a href="#" aria-label="Cha'Vap sur Instagram"><svg><use href="#i-insta"/></svg></a>
+      <a href="#" aria-label="Cha'Vap sur Facebook"><svg><use href="#i-fb"/></svg></a>
+    </div>
+    <div class="footer__legal">
+      <p class="warning"><strong>Vente interdite aux mineurs.</strong> Ce produit contenant de la nicotine crée une forte dépendance. Son utilisation par les non-fumeurs n'est pas recommandée.</p>
+      <p>© <span data-year>2026</span> Cha'Vap · <a href="#">Mentions légales</a> · <a href="#">Politique de confidentialité</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Le chat qui passe une tête -->
+<button class="peek" id="peek" type="button" aria-label="Cha'Vap passe une tête : cliquez pour un conseil" tabindex="-1">
+  <img src="assets/img/chat/chat-coucou.webp?v=3" width="320" height="717" alt="">
+</button>
+<div class="bubble bubble--peek" id="peekBubble" role="status" aria-live="polite"></div>
+
+<!-- Le chat qui traverse l'écran sur son nuage -->
+<div class="flyby" id="flyby" aria-hidden="true"><img src="assets/img/chat/chat-nuage.webp?v=3" width="1600" height="1350" alt=""></div>
+
+<canvas class="puffs" id="puffs" aria-hidden="true"></canvas>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo agrandie">
+  <button class="lightbox__close" type="button" data-close aria-label="Fermer"><svg><use href="#i-close"/></svg></button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" data-step="-1" aria-label="Photo précédente"><svg><use href="#i-chev"/></svg></button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" data-step="1" aria-label="Photo suivante"><svg><use href="#i-chev"/></svg></button>
+</dialog>
+
+<script src="assets/js/main.js?v=2" defer></script>
+</body>
+</html>
